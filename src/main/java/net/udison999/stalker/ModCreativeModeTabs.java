@@ -23,9 +23,12 @@ public class ModCreativeModeTabs {
                         // Badges
                         pOutput.accept(ModItems.STALKERS_BADGE.get());
                         pOutput.accept(ModItems.BANDITS_BADGE.get());
-                        
+
                         // Items
                         pOutput.accept(ModItems.BOLT.get());
+
+                        // Weapons
+                        pOutput.accept(ModItems.FORT12.get());
                     })
                     .build());
 

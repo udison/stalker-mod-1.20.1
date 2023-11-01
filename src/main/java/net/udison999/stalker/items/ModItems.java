@@ -25,7 +25,13 @@ public class ModItems {
      * Items
      */
     public static final RegistryObject<Item> BOLT = ITEMS.register("bolt",
-            () -> new BoltItem());
+            BoltItem::new);
+
+    /*
+     * Weapons
+     */
+    public static final RegistryObject<Item> FORT12 = ITEMS.register("fort12",
+            WeaponItem::new);
     
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
