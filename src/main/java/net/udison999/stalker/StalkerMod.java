@@ -13,6 +13,7 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.udison999.stalker.entity.ModEntities;
 import net.udison999.stalker.items.ModItems;
 import org.slf4j.Logger;
 
@@ -34,9 +35,12 @@ public class StalkerMod
         
         // Register creative tab
         ModCreativeModeTabs.register(modEventBus);
-        
+
         // Register items
         ModItems.register(modEventBus);
+
+        // Register entities
+        ModEntities.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
