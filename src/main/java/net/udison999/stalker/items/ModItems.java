@@ -31,7 +31,8 @@ public class ModItems {
      * Weapons
      */
     public static final RegistryObject<Item> FORT12 = ITEMS.register("fort12",
-            WeaponItem::new);
+            () -> new WeaponItem(new WeaponItem.WeaponProperties()
+                    .setMagazineSize(12)));
     
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
